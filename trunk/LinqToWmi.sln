@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqToWmi.Tests", "LinqToWmi.Tests\LinqToWmi.Tests.csproj", "{E8F46C8F-B676-4B09-8A96-E76FF7F1B418}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqToWmi.Core", "LinqToWmi.Core\LinqToWmi.Core.csproj", "{F4EC1E7F-A7F2-4D3B-B442-667BF8C6FE34}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqToWmi.ClassGenerator", "LinqToWmi.ClassGenerator\LinqToWmi.ClassGenerator.csproj", "{44E33EA4-BDC3-4FDC-92FA-52627732199F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E8F46C8F-B676-4B09-8A96-E76FF7F1B418}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8F46C8F-B676-4B09-8A96-E76FF7F1B418}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8F46C8F-B676-4B09-8A96-E76FF7F1B418}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8F46C8F-B676-4B09-8A96-E76FF7F1B418}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4EC1E7F-A7F2-4D3B-B442-667BF8C6FE34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4EC1E7F-A7F2-4D3B-B442-667BF8C6FE34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4EC1E7F-A7F2-4D3B-B442-667BF8C6FE34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4EC1E7F-A7F2-4D3B-B442-667BF8C6FE34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44E33EA4-BDC3-4FDC-92FA-52627732199F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44E33EA4-BDC3-4FDC-92FA-52627732199F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44E33EA4-BDC3-4FDC-92FA-52627732199F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44E33EA4-BDC3-4FDC-92FA-52627732199F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
