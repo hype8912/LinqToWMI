@@ -8,21 +8,14 @@ namespace LinqToWmi.ProtoGenerator
 {
     class WmiMetaInformation
     {
-        public ManagementObject GetMetaInformation(string name)
+        public ManagementClass GetMetaInformation(string name)
         {
-            ManagementObject value = null;
             ManagementScope scope = new ManagementScope(@"\\localhost");
 
             ManagementPath path = new ManagementPath(name);
             ManagementClass management = new ManagementClass(scope, path, null);
-   
-            foreach (ManagementObject child in management.GetInstances())
-            {            
-                value = child;
-                break;
-            }
-            management.Dispose();
-            return value;
+            
+            return management;
         }
     }
 }

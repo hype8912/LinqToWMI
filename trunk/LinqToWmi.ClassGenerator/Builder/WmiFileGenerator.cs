@@ -100,7 +100,7 @@ namespace LinqToWmi.ProtoGenerator
         /// <summary>
         /// Generate the WMI output file
         /// </summary>
-        public void GenerateFile(ManagementObject mgo, string name, string outfile)
+        public void GenerateFile(ManagementClass mgo, string name, string outfile)
         {
 
             var imports = new string[] { "System", "System.Linq", "LinqToWmi.Core.WMI" };
