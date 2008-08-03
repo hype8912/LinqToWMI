@@ -24,6 +24,11 @@ namespace LinqToWmi.ProtoGenerator
                 return;
             }
 
+            if (String.IsNullOrEmpty(commands.Wmi))
+            {
+                commands.Wmi = "common";
+            }
+
             if (commands.Wmi.ToLower() == "common")
             {
                 GenerateCommonClasses(commands);

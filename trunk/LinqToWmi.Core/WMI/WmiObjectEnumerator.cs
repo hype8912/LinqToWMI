@@ -57,7 +57,23 @@ namespace LinqToWmi.Core.WMI
         /// <returns></returns>
         public bool MoveNext()
         {
-            return _enumerator.MoveNext();
+            Boolean done = false;
+            Boolean result = false;
+
+            while (done == false)
+            {
+                try
+                {
+                    result = _enumerator.MoveNext();
+                    done = true;
+                }
+                catch (Exception)
+                {
+                    done = false;
+                }
+            }
+
+            return result;
         }
 
         /// <summary>

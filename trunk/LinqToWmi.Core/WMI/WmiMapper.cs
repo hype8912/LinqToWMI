@@ -21,7 +21,14 @@ namespace LinqToWmi.Core.WMI
 
             foreach (PropertyInfo info in typeof(T).GetProperties())
             {
-                info.SetValue(instance, MapType(wmiObject.Properties[ConvertMemberName(info)]), null);
+                try
+                {
+                    info.SetValue(instance, MapType(wmiObject.Properties[ConvertMemberName(info)]), null);
+                }
+                catch (Exception)
+                {
+                    continue;
+                }
             }
 
             return instance;

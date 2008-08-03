@@ -11,7 +11,7 @@ namespace LinqToWmi.ProtoGenerator
         private string _ns = "WmiEntities";
         private string _provider = "CSharp";
         
-        [Argument("wmi", Required = true, HelpText = "WMI object to create class for!")]
+        [Argument("wmi", HelpText = "WMI object to create class for!")]
         public string Wmi
         {
             get { return _wmi; }
